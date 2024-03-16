@@ -8,18 +8,22 @@
 
 ## to run the server : 
 
+> Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend) file path
+
 > ``` python manage.py makemigrations mywayapp ```
 
 > ``` python manage.py migrate ``` 
 
-> ``` python manage.py runserver ```
+> ``` python manage.py runserver _<ip address of your local host/ device where you want to host >:<port number>_ ```
+
+> for eg. ``` python manage.py runserver 172.16.40.240:8080```
 
 
 # How to add local host to ALLowed HOST : 
 
-> Navigate to settings.py inside MyWayBackend/MyWay
+> Navigate to settings.py inside [MyWayBackend/MyWay](https://github.com/QuietkidAniket/MyWayRESTAPI/blob/main/MyWayBackend/MyWay/settings.py)
 
-> Notice there is a python list named : ```ALLOWED HOST```
+> Notice there is a python list named : ```ALLOWED HOST``` 
 
 > ADD the IP Address of your device (not the port number) inside quotes " " to the list 
 
@@ -39,17 +43,17 @@
  
 >``` invalid/ ```  &emsp;&emsp; | No explicit API call needed, shows 404 error (both HTTPresponse and JSONresponse)
 
->``` post/<str:pk>/get/ ``` &emsp;&emsp; | json GET format := post/<_id of post_/get/
+>``` post/<str:pk>/get/ ``` &emsp;&emsp; | json GET request format := post/<_id of post_/get/
 
->``` post/create/ ``` &emsp;&emsp; | json POST /PUT format := {"content" : "_content_"}
+>``` post/create/ ``` &emsp;&emsp; | json POST /PUT request format := {"content" : "_content_"}
 
->```  post<str:pk>/update/ ``` &emsp;&emsp; | json PUT format := {"content" : "_content_"}
+>```  post<str:pk>/update/ ``` &emsp;&emsp; | json PUT request format := {"content" : "_content_"}
 
->``` login/ ```  &emsp;&emsp;  | json request format  := {"username" : "_name_" , "password" : "_password_"}
+>``` login/ ```  &emsp;&emsp;  | json POST request format  := {"username" : "_name_" , "password" : "_password_"}
 
 >``` logout/ ```  &emsp;&emsp; | Simple API request
 
->``` register/ ```  &emsp;&emsp; | json request format  := {"username" : "_name_" , "email" : "_email_", "password" : "_password_", "confirmation" : "_re nter the password_"}
+>``` register/ ```  &emsp;&emsp; | json POST request format  := {"username" : "_name_" , "email" : "_email_", "password" : "_password_", "confirmation" : "_re nter the password_"}
 
      
 
