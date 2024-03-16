@@ -21,17 +21,30 @@
 ##  ================   API   ======================
 
 >``` user/<str:username>/ ```
+
 >``` follow/<str:username>/ ```
->``` "feed/" ```
+
+>``` feed/ ```
+
 >``` localusers/<str:username> ```
+
 >``` similarconditions/<str:username> ```
+
 >``` similarhobbies/<str:username> ```
+
 >``` invalid/ ```
+
 >``` post/<str:pk>/get/ ```
+
 >``` post/create/ ```
+
 >``` post<str:pk>/update/ ```
+
 >``` login/ ```
+
 >``` logout/ ```
+
 >``` register/ ```
+
      
 
