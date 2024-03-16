@@ -155,7 +155,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -164,7 +164,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class CommunityViewSet(viewsets.ModelViewSet):
     """
@@ -172,49 +172,49 @@ class CommunityViewSet(viewsets.ModelViewSet):
     """
     queryset = Community.objects.all()
     serializer_class= CommunitySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 class UserStatsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
     queryset =  UserStats.objects.all()
     serializer_class = UserStatsSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset= Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset= Comment.objects.all()
     serializer_class = CommentSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class MessageViewSet(viewsets.ModelViewSet):
     queryset= Message.objects.all()
     serializer_class = MessageSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class ConditionViewSet(viewsets.ModelViewSet):
     queryset= Condition.objects.all()
     serializer_class = ConditionSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class HobbyViewSet(viewsets.ModelViewSet):
     queryset= Hobby.objects.all()
     serializer_class = HobbySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class FollowViewSet(viewsets.ModelViewSet):
     queryset= Follow.objects.all()
     serializer_class = FollowSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 class LocationViewSet(viewsets.ModelViewSet):
     queryset= Location.objects.all()
     serializer_class = LocationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOwnerOrReadOnly]
 
 @api_view(['POST'])
 def login_view(request):

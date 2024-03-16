@@ -29,7 +29,7 @@ class Condition(models.Model):
 
 class Community(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name = "communities_owned")
-    related_condition = models.ForeignKey(Condition, on_delete= models.CASCADE, related_name = "communities_related_to_condition")
+    related_condition = models.ForeignKey(Condition, on_delete= models.CASCADE, blank = True, null = True,related_name = "communities_related_to_condition")
     description = models.CharField(max_length = 1000)
 
 class Moderators(models.Model):

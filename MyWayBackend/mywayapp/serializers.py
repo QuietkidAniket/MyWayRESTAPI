@@ -30,7 +30,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = [ 'id','url', 'username', 'email', 'groups']
 
-class CommunitySerializer(serializers.ModelSerializer):
+class CommunitySerializer(serializers.HyperlinkedModelSerializer):
     
     class Meta:
         model = Community
