@@ -10,13 +10,13 @@
 
 > Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend) file path
 
-> ``` python manage.py makemigrations mywayapp ```
+    > ``` python manage.py makemigrations mywayapp ```
 
-> ``` python manage.py migrate ``` 
+    > ``` python manage.py migrate ``` 
 
-> ``` python manage.py runserver _<ip address of your local host/ device where you want to host >:<port number>_ ```
+    > ``` python manage.py runserver _<ip address of your local host/ device where you want to host >:<port number>_ ```
 
-> for eg. ``` python manage.py runserver 172.16.40.240:8080```
+    > for eg. ``` python manage.py runserver 172.16.40.240:8080```
 
 
 # How to add local host to ALLowed HOST : 
