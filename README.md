@@ -8,7 +8,7 @@
 
 ## to run the server : 
 
-> Navigate to  [a link](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend)
+> Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend) file path
 
 > ``` python manage.py makemigrations mywayapp ```
 
