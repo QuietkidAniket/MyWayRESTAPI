@@ -33,23 +33,23 @@
 
 >``` localusers/<str:username> ``` | localusers/<username_of_user_to_be_followed>
 
->``` similarconditions/<str:username> ``` | similarconditions/<username_of_user_to_be_followed>
+>``` similarconditions/<str:username> ``` | similarconditions/_username_of_user_to_be_followed_
 
->``` similarhobbies/<str:username> ``` | similarhobbies/<username_of_user_to_be_followed>
+>``` similarhobbies/<str:username> ``` | similarhobbies/ _username of user to be followed_
 
 >``` invalid/ ``` | No explicit API call needed, shows 404 error (both HTTPresponse and JSONresponse)
 
->``` post/<str:pk>/get/ ``` | json GET format := post/<id_of_post>/get/
+>``` post/<str:pk>/get/ ``` | json GET format := post/<_id of post_/get/
 
->``` post/create/ ``` | json POST /PUT format := {"content" : "<content>"}
+>``` post/create/ ``` | json POST /PUT format := {"content" : "_content_"}
 
->```  post<str:pk>/update/ ``` | json PUT format := {"content" : "<content>"}
+>```  post<str:pk>/update/ ``` | json PUT format := {"content" : "_content_"}
 
->``` login/ ```   | json request format  := {"username" : "<name>" , "password" : "<password>"}
+>``` login/ ```   | json request format  := {"username" : "_name_" , "password" : "_password_"}
 
 >``` logout/ ``` | Simple API request
 
->``` register/ ``` | json request format  := {"username" : "<name>" , "email" : "<email>", "password" : "<password>", "confirmation" : "< renter the password >"}
+>``` register/ ``` | json request format  := {"username" : "_name_" , "email" : "_email_", "password" : "_password_", "confirmation" : "_re nter the password_"}
 
      
 
