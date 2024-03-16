@@ -12,7 +12,8 @@
 
 > ``` python manage.py migrate ``` 
 
-> ``` python manage.py runserver ```
+> ``` python manage.py runserver < ip address of your local host/ device where you want to host >:<port number> ```
+> for eg. ``` python manage.py runserver 172.16.40.240:8080```
 
 
 # How to add local host to ALLowed HOST : 
