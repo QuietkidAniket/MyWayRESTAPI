@@ -19,18 +19,24 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         return obj == request.user
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
+
+class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
-        fields = ['url', 'name']
+        fields = ['id','url', 'name']
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'groups']
+        fields = [ 'id','url', 'username', 'email', 'groups']
 
+class CommunitySerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Community
+        fields=  "__all__"
 
-class UserStatsSerializer(serializers.HyperlinkedModelSerializer):
+class UserStatsSerializer(serializers.ModelSerializer):
     condition = serializers.HyperlinkedRelatedField(view_name="condition-details", many = True, read_only=True)
     hobby = serializers.HyperlinkedRelatedField(view_name="hobby-details", many = True, read_only=True)
 
@@ -44,38 +50,38 @@ class UserStatsSerializer(serializers.HyperlinkedModelSerializer):
         model = UserStats
         fields = "__all__";
 
-class PostSerializer(serializers.HyperlinkedModelSerializer):
+class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = "__all__";
 
-class CommentSerializer(serializers.HyperlinkedModelSerializer):
+class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = "__all__";
 
 
-class MessageSerializer(serializers.HyperlinkedModelSerializer):
+class MessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message
         fields = "__all__";
 
-class FollowSerializer(serializers.HyperlinkedModelSerializer):
+class FollowSerializer(serializers.ModelSerializer):
     class Meta:
         model = Follow
         fields = "__all__";
 
-class LocationSerializer(serializers.HyperlinkedModelSerializer):
+class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
         fields = "__all__";
 
-class ConditionSerializer(serializers.HyperlinkedModelSerializer):
+class ConditionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Condition
         fields = "__all__"
 
-class HobbySerializer(serializers.HyperlinkedModelSerializer):
+class HobbySerializer(serializers.ModelSerializer):
     class Meta:
         model = Hobby
         fields = "__all__"

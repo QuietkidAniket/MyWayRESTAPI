@@ -148,13 +148,15 @@ def follow(request, username):
     Admin only views + standard login, logout and register function 
 """
 
+
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
+
 
 class GroupViewSet(viewsets.ModelViewSet):
     """
@@ -162,50 +164,57 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
+class CommunityViewSet(viewsets.ModelViewSet):
+    """
+        API endpoint that allows Communities to be viewed or edited.
+    """
+    queryset = Community.objects.all()
+    serializer_class= CommunitySerializer
+    permission_classes = [permissions.IsAuthenticated]
 class UserStatsViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
     queryset =  UserStats.objects.all()
     serializer_class = UserStatsSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset= Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset= Comment.objects.all()
     serializer_class = CommentSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class MessageViewSet(viewsets.ModelViewSet):
     queryset= Message.objects.all()
     serializer_class = MessageSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class ConditionViewSet(viewsets.ModelViewSet):
     queryset= Condition.objects.all()
     serializer_class = ConditionSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class HobbyViewSet(viewsets.ModelViewSet):
     queryset= Hobby.objects.all()
     serializer_class = HobbySerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class FollowViewSet(viewsets.ModelViewSet):
     queryset= Follow.objects.all()
     serializer_class = FollowSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 class LocationViewSet(viewsets.ModelViewSet):
     queryset= Location.objects.all()
     serializer_class = LocationSerializer
-    permission_classes = [permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated]
 
 @api_view(['POST'])
 def login_view(request):

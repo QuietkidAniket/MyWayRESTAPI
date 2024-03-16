@@ -30,7 +30,7 @@ DEBUG = True
 AUTH_USER_MODEL = "mywayapp.User"
 
 
-ALLOWED_HOSTS = ["192.168.0.159", "172.16.40.240"]
+ALLOWED_HOSTS = ["192.168.0.159", "192.168.144.243","172.16.40.240"]
 
 # Pagination allows you to control how many objects per page are returned. 
 REST_FRAMEWORK = {

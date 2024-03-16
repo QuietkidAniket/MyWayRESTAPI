@@ -13,7 +13,7 @@ router.register(r'location', views.LocationViewSet)
 router.register(r'follow', views.FollowViewSet)
 router.register(r'condition', views.ConditionViewSet)
 router.register(r'hobby', views.HobbyViewSet)
-
+router.register(r'community', views.CommunityViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
