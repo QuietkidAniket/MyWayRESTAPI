@@ -12,9 +12,12 @@
 
     > ``` python manage.py makemigrations mywayapp ```
 
+
     > ``` python manage.py migrate ``` 
 
+
     > ``` python manage.py runserver _<ip address of your local host/ device where you want to host >:<port number>_ ```
+
 
     > for eg. ``` python manage.py runserver 172.16.40.240:8080```
 
