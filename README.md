@@ -21,9 +21,9 @@
 
 # How to add local host to ALLowed HOST : 
 
-> Navigate to settings.py inside MyWayBackend/MyWay
+> Navigate to settings.py inside [MyWayBackend/MyWay](https://github.com/QuietkidAniket/MyWayRESTAPI/blob/main/MyWayBackend/MyWay/settings.py)
 
-> Notice there is a python list named : ```ALLOWED HOST```
+> Notice there is a python list named : ```ALLOWED HOST``` 
 
 > ADD the IP Address of your device (not the port number) inside quotes " " to the list 
 
