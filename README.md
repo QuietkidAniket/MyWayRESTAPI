@@ -1,9 +1,6 @@
 
 # My Way app
 
-# Front end : 
-
-``` MyWayFlutter```
 
 # Back end :
 
@@ -17,6 +14,14 @@
 
 > ``` python manage.py runserver ```
 
+
+# How to add local host to ALLowed HOST : 
+
+> Navigate to settings.py inside MyWayBackend/MyWay
+
+> Notice there is a python list named : ```ALLOWED HOST```
+
+> ADD the IP Address of your device (not the port number) inside quotes " " to the list 
 
 ##  ================   API   ======================
 
