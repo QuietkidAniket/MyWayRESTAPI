@@ -8,6 +8,8 @@
 
 ## to run the server : 
 
+> Navigate to  [a link](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend)
+
 > ``` python manage.py makemigrations mywayapp ```
 
 > ``` python manage.py migrate ``` 
