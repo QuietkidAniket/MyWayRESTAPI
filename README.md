@@ -25,31 +25,31 @@
 
 ##  ================   API   ======================
 
->``` user/<str:username>/ ``` | user/ _username of user to be followed_
+>``` user/<str:username>/ ``` &emsp;&emsp; | user/ _username of user to be followed_
 
->``` follow/<str:username>/ ``` | follow/ _username of user to be followed_
+>``` follow/<str:username>/ ``` &emsp;&emsp;| follow/ _username of user to be followed_
 
 >``` feed/ ```  | simple API call
 
->``` localusers/<str:username> ``` | localusers/ _username of user to be followed_
+>``` localusers/<str:username> ``` &emsp;&emsp;| localusers/ _username of user to be followed_
 
->``` similarconditions/<str:username> ``` | similarconditions/ _username of user to be followed_
+>``` similarconditions/<str:username> ``` &emsp;&emsp; | similarconditions/ _username of user to be followed_
 
->``` similarhobbies/<str:username> ``` | similarhobbies/ _username of user to be followed_
+>``` similarhobbies/<str:username> ``` &emsp;&emsp;| similarhobbies/ _username of user to be followed_
+ 
+>``` invalid/ ```  &emsp;&emsp; | No explicit API call needed, shows 404 error (both HTTPresponse and JSONresponse)
 
->``` invalid/ ``` | No explicit API call needed, shows 404 error (both HTTPresponse and JSONresponse)
+>``` post/<str:pk>/get/ ``` &emsp;&emsp; | json GET format := post/<_id of post_/get/
 
->``` post/<str:pk>/get/ ``` | json GET format := post/<_id of post_/get/
+>``` post/create/ ``` &emsp;&emsp; | json POST /PUT format := {"content" : "_content_"}
 
->``` post/create/ ``` | json POST /PUT format := {"content" : "_content_"}
+>```  post<str:pk>/update/ ``` &emsp;&emsp; | json PUT format := {"content" : "_content_"}
 
->```  post<str:pk>/update/ ``` | json PUT format := {"content" : "_content_"}
+>``` login/ ```  &emsp;&emsp;  | json request format  := {"username" : "_name_" , "password" : "_password_"}
 
->``` login/ ```   | json request format  := {"username" : "_name_" , "password" : "_password_"}
+>``` logout/ ```  &emsp;&emsp; | Simple API request
 
->``` logout/ ``` | Simple API request
-
->``` register/ ``` | json request format  := {"username" : "_name_" , "email" : "_email_", "password" : "_password_", "confirmation" : "_re nter the password_"}
+>``` register/ ```  &emsp;&emsp; | json request format  := {"username" : "_name_" , "email" : "_email_", "password" : "_password_", "confirmation" : "_re nter the password_"}
 
      
 
