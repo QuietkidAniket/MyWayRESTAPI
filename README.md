@@ -25,15 +25,15 @@
 
 ##  ================   API   ======================
 
->``` user/<str:username>/ ``` | user/<username_of_user_to_be_followed>
+>``` user/<str:username>/ ``` | user/ _username of user to be followed_
 
->``` follow/<str:username>/ ``` | follow/<username_of_user_to_be_followed>
+>``` follow/<str:username>/ ``` | follow/ _username of user to be followed_
 
 >``` feed/ ```  | simple API call
 
->``` localusers/<str:username> ``` | localusers/<username_of_user_to_be_followed>
+>``` localusers/<str:username> ``` | localusers/ _username of user to be followed_
 
->``` similarconditions/<str:username> ``` | similarconditions/_username_of_user_to_be_followed_
+>``` similarconditions/<str:username> ``` | similarconditions/ _username of user to be followed_
 
 >``` similarhobbies/<str:username> ``` | similarhobbies/ _username of user to be followed_
 
