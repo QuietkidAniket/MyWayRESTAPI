@@ -2,9 +2,9 @@
 # My Way app
 
 # Front end (Flutter)
-    > MyWay
+    MyWay
 # Front end (Web App)
-    > mywayapp
+    mywayapp
 # Back end :
 
 ``` MyWayBackend ```
