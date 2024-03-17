@@ -5,6 +5,16 @@
     MyWay
 # Front end (Web App)
     mywayapp
+Navigate to [/mywayapp](https://github.com/QuietkidAniket/MyWayRESTAPI/tree/main/myway) then run
+    
+    flutter run
+    
+select the device on which you want to run the app
+
+## to run the web app
+Navigate to [/mywayweb](https://github.com/QuietkidAniket/MyWayRESTAPI/tree/main/mywayweb) and then open the index.html using live server extension on Visual Studio Code
+
+
 # Back end :
 
 ``` MyWayBackend ```
