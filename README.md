@@ -286,17 +286,29 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
 ### message
 * <strong>list of objects (API call type 1): </strong>
-
     {
 
-        "count": 1,
+        "count": 2,
         "next": null,
         "previous": null,
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "content": "hi i am Aniket",
+                "created": "2024-03-17",
+                "isedited": false,
+                "updated": "2024-03-17",
+                "user": 2,
+                "community": 1
+            },
+            {
+                "id": 2,
+                "content": "Yes, I was present at that moment",
+                "created": "2024-03-17",
+                "isedited": false,
+                "updated": "2024-03-17",
+                "user": 2,
+                "community": null
             }
         ]
     }
@@ -307,9 +319,14 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
+            
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "content": "hi i am Aniket",
+        "created": "2024-03-17",
+        "isedited": false,
+        "updated": "2024-03-17",
+        "user": 2,
+        "community": 1
     }
 
 ### location
@@ -317,14 +334,30 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
-        "count": 1,
+            "count": 3,
         "next": null,
         "previous": null,
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/location/1/",
-                "name": "Location1"
+                "region": "bally",
+                "country": "India",
+                "latitude": 82.0,
+                "longitude": 32.0
+            },
+            {
+                "id": 2,
+                "region": "Mambakkam",
+                "country": "India",
+                "latitude": 82.0,
+                "longitude": 31.0
+            },
+            {
+                "id": 3,
+                "region": "Chennai",
+                "country": "India",
+                "latitude": 82.0,
+                "longitude": 31.0
             }
         ]
     }
@@ -335,24 +368,36 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
-        "id": 1,
-        "url": "http://192.168.144.243:8080/location/1/",
-        "name": "location1"
+        "id": 3,
+        "region": "Chennai",
+        "country": "India",
+        "latitude": 82.0,
+        "longitude": 31.0
     }
 
-### follow
+### follows
 * <strong>list of objects (API call type 1): </strong>
 
     {
 
-        "count": 1,
+        "count": 3,
         "next": null,
         "previous": null,
         "results": [
             {
-                "id": 1,
-                "url": "http://192.168.144.243:8080/follow/1/",
-                "name": "Follow1"
+                "id": 2,
+                "user": 2,
+                "following": 1
+            },
+            {
+                "id": 3,
+                "user": 3,
+                "following": 1
+            },
+            {
+                "id": 4,
+                "user": 2,
+                "following": 3
             }
         ]
     }
@@ -363,9 +408,10 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
-        "id": 1,
-        "url": "http://192.168.144.243:8080/follow/1/",
-        "name": "Follow1"
+        "id": 2,
+        "user": 2,
+        "following": 1
+
     }
 
 ### condition
@@ -373,16 +419,29 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
-        "count": 1,
-        "next": null,
-        "previous": null,
-        "results": [
-            {
-                "id": 1,
-                "url": "http://192.168.144.243:8080/condition/1/",
-                "name": "condition1"
-            }
-        ]
+        "count": 3,
+            "next": null,
+            "previous": null,
+            "results": [
+                {
+                    "id": 1,
+                    "name": "ADHD",
+                    "category": "Mental Well Being",
+                    "description": "Attention Deficit HyperActivity Disorder"
+                },
+                {
+                    "id": 2,
+                    "name": "Obesity",
+                    "category": "Physical Well Being",
+                    "description": "Obesity"
+                },
+                {
+                    "id": 3,
+                    "name": "One limb Survivors",
+                    "category": "Physical Well Being",
+                    "description": "One limb lost in accidents or amputated surgically"
+                }
+            ]
     }
 
 
@@ -392,27 +451,33 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/condition/1/",
-        "name": "condition1"
+        "name": "ADHD",
+        "category": "Mental Well Being",
+        "description": "Attention Deficit HyperActivity Disorder"
     }
-
 ### hobby
 * <strong>list of objects (API call type 1): </strong>
 
     {
 
-        "count": 1,
+        "count": 2,
         "next": null,
         "previous": null,
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/hobby/1/",
-                "name": "hobby1"
+                "name": "Swimming",
+                "category": "Physical Well Being",
+                "description": "Swimming 50 metres at the local swimming pool and noting your speeds."
+            },
+            {
+                "id": 2,
+                "name": "Guitar Playing",
+                "category": "Mental Well Being",
+                "description": "1 hour of daily guitar melody keeps your mind fresh and reduce anxiety levels by a staggering 70%"
             }
         ]
     }
-
 
 
 *  <strong>specific object (API call type 2): </strong>
@@ -420,8 +485,9 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/hobby/1/",
-        "name": "hobby"
+        "name": "Swimming",
+        "category": "Physical Well Being",
+        "description": "Swimming 50 metres at the local swimming pool and noting your speeds."
     }
 
 ### community
@@ -434,9 +500,10 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "previous": null,
         "results": [
             {
-                "id": 1,
-                "url": "http://192.168.144.243:8080/community/1/",
-                "name": "Community1"
+                "url": "http://192.168.0.159:8080/community/1/",
+                "description": "Nothing of as such",
+                "owner": "http://192.168.0.159:8080/users/1/",
+                "related_condition": null
             }
         ]
     }
@@ -447,9 +514,10 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
 
     {
 
-        "id": 1,
-        "url": "http://192.168.144.243:8080/community/1/",
-        "name": "Community1"
+        "url": "http://192.168.0.159:8080/community/1/",
+        "description": "Nothing of as such",
+        "owner": "http://192.168.0.159:8080/users/1/",
+        "related_condition": null
     }
 
 
