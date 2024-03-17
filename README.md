@@ -323,8 +323,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "url": "http://192.168.144.243:8080/location/1/",
+                "name": "Location1"
             }
         ]
     }
@@ -336,8 +336,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "url": "http://192.168.144.243:8080/location/1/",
+        "name": "location1"
     }
 
 ### follow
@@ -351,8 +351,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "url": "http://192.168.144.243:8080/follow/1/",
+                "name": "Follow1"
             }
         ]
     }
@@ -364,8 +364,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "url": "http://192.168.144.243:8080/follow/1/",
+        "name": "Follow1"
     }
 
 ### condition
@@ -379,8 +379,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "url": "http://192.168.144.243:8080/condition/1/",
+                "name": "condition1"
             }
         ]
     }
@@ -392,8 +392,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "url": "http://192.168.144.243:8080/condition/1/",
+        "name": "condition1"
     }
 
 ### hobby
@@ -407,8 +407,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "url": "http://192.168.144.243:8080/hobby/1/",
+                "name": "hobby1"
             }
         ]
     }
@@ -420,8 +420,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "url": "http://192.168.144.243:8080/hobby/1/",
+        "name": "hobby"
     }
 
 ### community
@@ -435,8 +435,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
         "results": [
             {
                 "id": 1,
-                "url": "http://192.168.144.243:8080/groups/1/",
-                "name": "Group1"
+                "url": "http://192.168.144.243:8080/community/1/",
+                "name": "Community1"
             }
         ]
     }
@@ -448,8 +448,8 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     {
 
         "id": 1,
-        "url": "http://192.168.144.243:8080/groups/1/",
-        "name": "Group1"
+        "url": "http://192.168.144.243:8080/community/1/",
+        "name": "Community1"
     }
 
 
