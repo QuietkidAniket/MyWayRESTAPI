@@ -1,7 +1,10 @@
 
 # My Way app
 
-
+# Front end (Flutter)
+    > MyWay
+# Front end (Web App)
+    > mywayapp
 # Back end :
 
 ``` MyWayBackend ```
@@ -23,7 +26,7 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     device where you want to host >:<port number>_ ```
 <br>
 
-    for eg. ``` python manage.py runserver 172.16.40.240:8080```
+    for eg. python manage.py runserver 172.16.40.240:8080
 
 
 # How to add local host to ALLowed HOST : 
