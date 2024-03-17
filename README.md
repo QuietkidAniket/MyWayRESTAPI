@@ -36,7 +36,7 @@ Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit
     python manage.py runserver _<ip address of your local host/ device where you want to host >:<port number>_
 <br>
 
-    for eg. python manage.py runserver 172.16.40.240:8080
+for eg. python manage.py runserver 172.16.40.240:8080
 
 
 # How to add local host to ALLowed HOST : 
