@@ -6,7 +6,8 @@
 # Front end (Web App)
     mywayapp
 Navigate to [/mywayapp](https://github.com/QuietkidAniket/MyWayRESTAPI/tree/main/myway) then run
-<br>    
+<br>   
+
     flutter run
 <br>
 select the device on which you want to run the app
