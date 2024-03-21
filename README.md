@@ -1,10 +1,25 @@
 
 # My Way app
 
-# Front end (Flutter)
-    MyWay
-# Front end (Web App)
-    mywayapp
+> Made using 
+
+<div class="flex" style="align-items:center">
+<div><img src="assets/drf-logo2.png" height="150px" style="align:right"> </div>
+<div><img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> </div>
+</div>
+
+> Why MyWay and what does it do?
+
+<img src="assets/problemStatement.png">
+<img src="assets/productidea.png">
+<img src="assets/techStack.png">
+<img src="assets/additionalinfo.png">
+
+Front end (Flutter) : ```  MyWay ```
+
+Front end (Web App) : ``` mywayapp ```
+
+
 Navigate to [/mywayapp](https://github.com/QuietkidAniket/MyWayRESTAPI/tree/main/myway) then run
 <br>   
 
