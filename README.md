@@ -3,10 +3,8 @@
 
 > Made using 
 
-<div class="flex" style="align-items:center">
-<div><img src="assets/drf-logo2.png" height="150px" style="align:right"> </div>
-<div><img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> </div>
-</div>
+<img src="assets/drf-logo2.png" height="150px" style="align:right">
+<img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> 
 
 > Why MyWay and what does it do?
 
