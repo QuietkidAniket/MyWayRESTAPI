@@ -10,10 +10,10 @@
 
 > Why MyWay and what does it do?
 
-<img src="assets/problemStatement.png">
-<img src="assets/productidea.png">
-<img src="assets/techStack.png">
-<img src="assets/additionalinfo.png">
+<img src="assets/problemStatement.png" height="250px">
+<img src="assets/productidea.png" height="250px">
+<img src="assets/techStack.png" height="250px">
+<img src="assets/additionalinfo.png" height="250px">
 
 Front end (Flutter) : ```  MyWay ```
 
