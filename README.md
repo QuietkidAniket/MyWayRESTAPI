@@ -1,7 +1,7 @@
 
 # My Way app
 
-> Made using 
+## 💪 Made using :-
 
 <div class= flex style="align-items:center">
     
@@ -12,7 +12,7 @@
 
 <br>
 
-## <div style="font-size:10;font-weight:bold"> Why MyWay and what does it do? </div>
+##  🧘 Why MyWay and what does it do? </div>
 
 <img src="assets/problemStatement.png" height="300px">
 
@@ -42,7 +42,7 @@ Navigate to [/mywayweb](https://github.com/QuietkidAniket/MyWayRESTAPI/tree/main
 
 ``` MyWayBackend ```
 
-## to run the server : 
+##  to run the server : 
 
 Navigate to  [/MyWayBackend](https://github.com/QuietkidAniket/MyWayRESTAPI/edit/main/MyWayBackend) file path
 <br>
