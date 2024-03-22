@@ -7,13 +7,19 @@
     
 <img src="assets/drf-logo2.png" height="150px" style="align:right">
 
-<img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> 
+<img src="assets/flutter.png" height = "50px" style="align:center"> 
 </div>
-> Why MyWay and what does it do?
+
+<br>
+
+<div style="font-size:10"> Why MyWay and what does it do? </div>
 
 <img src="assets/problemStatement.png" height="300px">
+
 <img src="assets/productidea.png" height="300px">
+
 <img src="assets/techStack.png" height="300px">
+
 <img src="assets/additionalinfo.png" height="300px">
 
 Front end (Flutter) : ```  MyWay ```
