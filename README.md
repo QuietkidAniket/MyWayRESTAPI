@@ -3,9 +3,12 @@
 
 > Made using 
 
+<div class= flex style="align-items:center">
+    
 <img src="assets/drf-logo2.png" height="150px" style="align:right">
-<img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> 
 
+<img src="assets/Google-flutter-logo.svg.png" height = "50px" style="align:center"> 
+</div>
 > Why MyWay and what does it do?
 
 <img src="assets/problemStatement.png" height="300px">
