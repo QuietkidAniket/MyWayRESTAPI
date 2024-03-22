@@ -12,7 +12,7 @@
 
 <br>
 
-<div style="font-size:10"> Why MyWay and what does it do? </div>
+## <div style="font-size:10;font-weight:bold"> Why MyWay and what does it do? </div>
 
 <img src="assets/problemStatement.png" height="300px">
 
